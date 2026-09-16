@@ -1,5 +1,9 @@
 # C64 v1.4
 
+![C64 effect preview](docs/preview.png)
+
+Visual preview asset for this effect; run the VICE command below for an emulator capture.
+
 Cleaned PAL C64 demo source with multi-raster IRQs, sprites, scroller, plasma,
 and decorative logo effects.
 
