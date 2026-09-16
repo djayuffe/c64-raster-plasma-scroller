@@ -2,7 +2,7 @@
 
 ![C64 effect preview](docs/preview.png)
 
-Visual preview asset for this effect; run the VICE command below for an emulator capture.
+Live VICE capture from the built PRG (PAL timing).
 
 Cleaned PAL C64 demo source with multi-raster IRQs, sprites, scroller, plasma,
 and decorative logo effects.
