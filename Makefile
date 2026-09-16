@@ -1,8 +1,8 @@
 .PHONY: all clean
 
 ACME ?= acme
-OUTPUT := build/deepseek_c64_v1_4.prg
-SOURCE := deepseek_c64_v1_4.s
+OUTPUT := build/c64_raster_plasma_scroller.prg
+SOURCE := c64_raster_plasma_scroller.s
 
 all: $(OUTPUT)
 

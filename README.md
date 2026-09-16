@@ -1,4 +1,4 @@
-# DeepSeek C64 v1.4
+# C64 v1.4
 
 Cleaned PAL C64 demo source with multi-raster IRQs, sprites, scroller, plasma,
 and decorative logo effects.
@@ -11,15 +11,15 @@ Requires ACME 0.97 or newer:
 make
 ```
 
-The reproducible output is `build/deepseek_c64_v1_4.prg`. To run it with VICE:
+The reproducible output is `build/c64_raster_plasma_scroller.prg`. To run it with VICE:
 
 ```sh
-x64sc -autostart build/deepseek_c64_v1_4.prg
+x64sc -autostart build/c64_raster_plasma_scroller.prg
 ```
 
 ## Repository layout
 
-- `deepseek_c64_v1_4.s` — corrected source.
+- `c64_raster_plasma_scroller.s` — corrected source.
 - `Makefile` — strict ACME build and clean targets.
 - `AUDIT.md` — issue-by-issue repair record and validation contract.
 - `SHA256SUMS.txt` — checksums for tracked files.

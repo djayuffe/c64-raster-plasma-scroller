@@ -1,6 +1,6 @@
 ;
 ; ==============================================================
-; deepseek_asm_FIXED.s (Originally: 20251009_ULTIMATE_EYECANDY_FINAL_PAL.s)
+; c64_raster_plasma_scroller.s (Originally: c64_raster_plasma_scroller.s)
 ; Release-quality PAL demo: multi-IRQ chain, sprites, scroller,
 ; plasma BG, raster bars, logo, and decorative lines.
 ;
@@ -8,8 +8,8 @@
 ; improved sprite coloring, added NMI handler, and optimized various routines.
 ;
 ; Target: PAL C64 (312 raster lines @ ~50 Hz)
-; Build : acme --strict-segments -f cbm -o deepseek_c64_v1_4.prg deepseek_c64_v1_4.s
-; Run   : x64sc -autostart deepseek_c64_v1_4.prg
+; Build : acme --strict-segments -f cbm -o c64_raster_plasma_scroller.prg c64_raster_plasma_scroller.s
+; Run   : x64sc -autostart c64_raster_plasma_scroller.prg
 ;
 ; Memory map (VIC bank 0):
 ;   Screen  : $0400-$07E7
