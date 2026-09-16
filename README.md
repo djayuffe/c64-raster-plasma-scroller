@@ -1,4 +1,4 @@
-# C64 v1.4
+# C64 - Raster Plasma Scroller
 
 ![C64 effect preview](docs/preview.png)
 
