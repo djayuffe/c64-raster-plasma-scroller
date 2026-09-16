@@ -30,3 +30,7 @@ The audit removed duplicate local labels and dead duplicate scroller code,
 restored the missing sprite/color update work, fixed startup color setup, and
 made raster carry handling explicit. The original `$0801`/`SYS 4608` entry
 contract is preserved.
+## Documentation and license
+
+Function-level documentation is in docs/FUNCTIONS.md. The project is released
+under GPL-3.0; see LICENSE.
