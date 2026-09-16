@@ -8,8 +8,8 @@
 ; improved sprite coloring, added NMI handler, and optimized various routines.
 ;
 ; Target: PAL C64 (312 raster lines @ ~50 Hz)
-; Build : acme --strict-segments -f cbm -o ultimate_demo_fixed.prg deepseek_asm_FIXED_v1_4_clean.s
-; Run   : x64sc -autostart ultimate_demo_fixed.prg
+; Build : acme --strict-segments -f cbm -o deepseek_c64_v1_4.prg deepseek_c64_v1_4.s
+; Run   : x64sc -autostart deepseek_c64_v1_4.prg
 ;
 ; Memory map (VIC bank 0):
 ;   Screen  : $0400-$07E7
