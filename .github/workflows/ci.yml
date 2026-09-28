@@ -1,0 +1,31 @@
+name: Build C64 Raster Plasma Scroller
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+      - name: Install ACME
+        run: sudo apt-get update && sudo apt-get install --yes acme
+      - name: Build PRG
+        run: make
+      - name: Validate PRG format
+        run: |
+          test -s build/c64_raster_plasma_scroller.prg
+          test "$(od -An -tx1 -N2 build/c64_raster_plasma_scroller.prg | tr -d ' \\n')" = "0108"
+          test "$(wc -c < build/c64_raster_plasma_scroller.prg)" -gt 1024
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: c64-raster-plasma-scroller-prg
+          path: build/c64_raster_plasma_scroller.prg

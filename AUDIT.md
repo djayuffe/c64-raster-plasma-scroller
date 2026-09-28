@@ -16,3 +16,11 @@ Validation: ACME `--strict-segments` succeeds and produces a CBM PRG with the
 existing `$0801`/`SYS 4608` entry contract.
 
 Corrected build SHA-256: `181c14d8b6edc120abd821ac54002f29b383ca0f78789d4e11ef3b6cab586624`.
+
+## Release hygiene
+
+The project now has an explicit Ulf Bertilsson copyright/SPDX notice, a
+complete GPLv3 `NOTICE`, effect-level documentation, and live VICE captures in
+`assets/effects/`. GitHub Actions installs ACME, builds with the same Makefile,
+checks the C64 load address and output size, and uploads the resulting PRG.
+`make checksums` and `make check` keep the documented inputs reproducible.

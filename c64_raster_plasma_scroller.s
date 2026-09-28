@@ -1,6 +1,6 @@
 ;
 ; ==============================================================
-; c64_raster_plasma_scroller.s (Originally: c64_raster_plasma_scroller.s)
+; C64 Raster Plasma Scroller (C64 / ACME)
 ; Release-quality PAL demo: multi-IRQ chain, sprites, scroller,
 ; plasma BG, raster bars, logo, and decorative lines.
 ;
@@ -19,6 +19,8 @@
 ; Zero page used: $FB-$FF (safe, outside KERNAL/CIA workspace)
 ; IRQ lines (approximate): 50 -> 100 -> 150 -> 200 -> loop
 ; Each IRQ: ACK $D019, push A/X/Y, do work, set next vector/line, tail via $EA31.
+; Copyright (C) 2026 Ulf Bertilsson
+; SPDX-License-Identifier: GPL-3.0-or-later
 ; ==============================================================
 
 ; ---------------- BASIC stub: 10 SYS4608 ----------------
